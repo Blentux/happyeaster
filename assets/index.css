@@ -1,0 +1,74 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: green; */
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+h1 { color: #fff; }
+
+canvas {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Utilities */
+.hidden { display: none; }
+
+/* Modal */
+.modal {
+    z-index: 999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 700px;
+    background-color: rgb(170, 127, 82);
+    border: 2px solid #fff;
+}
+
+.modal-wrapper {
+    padding: 12px;
+}
+
+.modal-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* USER SCORE */
+.user-gui {
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    right: 20px;
+    color: #fff;
+}
+.user-score { font-size: 120px; }
+.user-controls {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+.btn { height: 200px; width: 250px; }
+.btn-w { grid-column-start: 2; grid-column-end: 3; }
+.btn-a { grid-column-start: 1; grid-row-start: 2; }
+.btn-s { grid-column-start: 2; grid-row-start: 3; }
+.btn-d { grid-column-start: 3; grid-row-start: 2; }
+
+@media screen and (max-width: 840px){
+    .user-gui {
+        width: 40%;
+    }
+    .user-score { font-size: 50px; }
+    .btn { height: 80px; width: 100px; }
+}
