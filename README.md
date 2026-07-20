@@ -1,4 +1,4 @@
-# Easter Eco-Runner (Three.js Voxel Game Concept)
+# Happy Easter (Three.js Voxel Game Concept)
 
 Dieses Projekt ist ein interaktiver Prototyp im Voxel-Look, der einen pädagogischen Ansatz beinhaltet. Die Idee entstand rund um das Thema Ostern und Umweltschutz.
 
